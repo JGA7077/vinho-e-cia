@@ -1,15 +1,23 @@
 import React from 'react';
-import logo from '../../assets/images/icones/fruit.svg'
+import styled from 'styled-components';
+import Logo from '../Logo/Logo'
+import Menu from '../Menu/Menu';
 
-// const 
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px;
+  position: relative;
+`
 
-const Header = () => {
+ 
+export default () => {
   return(
-    <header>
-      <img src={logo} alt="Logo da empresa" />
-      <h1>teste</h1>
-    </header>
+    <Header>
+      <Logo />
+      <Menu />
+    </Header>
   )
 }
-
-export default Header

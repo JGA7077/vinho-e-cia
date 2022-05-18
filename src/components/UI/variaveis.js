@@ -1,0 +1,5 @@
+export const primaryColor = "#851c29"
+export const secondaryColor = "#006400"
+export const whiteBackground = "#e6e6e6"
+export const textColor = "#222"
+export const silverColor = "#898989"
