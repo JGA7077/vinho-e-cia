@@ -3,6 +3,7 @@ import styled from "styled-components";
 import BannerImage from "../../assets/images/Destaques Maiores/banner-principal-home.jpg";
 import TitleImage from "../../assets/images/Divisores/destaque-home.png";
 import { secondaryColor } from "../UI/variaveis";
+import { SectionTitle } from "../UI";
 
 const Banner = styled.div`
   width: 100vw;
@@ -15,28 +16,19 @@ const Banner = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: 530px) {
     background-position-x: -290px;
   }
-
-  .title {
-    font-family: "Ribeye", cursive;
-    color: ${secondaryColor};
-    font-size: 42px;
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-      font-size: 50px;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1279px) {
-      font-size: 60px;
-    }
-
-    @media (min-width: 1280px) {
-      font-size: 65px;
-    }
-  }
 `;
+
+const BannerTitle = styled(SectionTitle)`
+  font-family: "Ribeye", cursive;
+  color: ${secondaryColor};
+
+  @media (min-width: 1280px) {
+    font-size: 80px;
+  }
+`
 
 const SpotlightImage = styled.img`
   width: 296px;
@@ -50,14 +42,14 @@ const SpotlightImage = styled.img`
   }
 
   @media (min-width: 1280px) {
-    width: 458px;
+    width: 563px;
   }
 `;
 
 export default () => {
   return (
     <Banner>
-      <h1 className="title">Vinhos & Cia</h1>
+      <BannerTitle>Vinhos & Cia</BannerTitle>
       <SpotlightImage src={TitleImage} />
     </Banner>
   );

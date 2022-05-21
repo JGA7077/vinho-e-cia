@@ -13,3 +13,25 @@ export const Button = styled.button`
     background-color: ${primaryColor};
   }
 `
+
+export const SectionContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+`
+
+export const SectionTitle = styled.h2`
+  color: ${primaryColor};
+  font-size: 42px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 65px;
+  }
+`
