@@ -20,7 +20,7 @@ const Footer = styled.footer`
 export default () => {
   return(
     <Footer>
-      <p class="footer-text">Copyright &copy; 2020 Vinhos e Cia | Criado por Ewelyn e Gabriel</p>
+      <p className="footer-text">Copyright &copy; 2020 Vinhos e Cia | Criado por Ewelyn e Gabriel</p>
     </Footer>
   )
 }

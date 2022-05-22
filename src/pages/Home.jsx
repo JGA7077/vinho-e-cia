@@ -5,6 +5,11 @@ import Map from '../components/Map/Map';
 import InfoSection from '../components/InfoSection/InfoSection';
 
 const Home = () => {
+  const links = document.querySelectorAll("nav ul li a")
+  links.forEach((link) => link.classList.remove("active"))
+  
+  const homeLink = document.querySelector("nav ul li a.home")
+  homeLink.classList.add("active")
   return(
     <>
       <BannerPrincipal />
