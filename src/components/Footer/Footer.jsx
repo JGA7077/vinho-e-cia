@@ -6,7 +6,7 @@ const Footer = styled.footer`
   width: 100vw;
   text-align: center;
   background-color: #3a3a3a;
-  /* height: 50px; */
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionContainer } from '../UI';
 import { whiteBackground, primaryColor } from '../UI/variaveis';
 import { SectionTitle } from '../UI';
-// import {image} from '../../assets/images/Produtos/'
 
 import { Products } from '../../api/products';
 
