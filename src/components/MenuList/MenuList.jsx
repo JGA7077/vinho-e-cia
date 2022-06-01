@@ -11,11 +11,11 @@ const MenuList = styled.ul`
   height: 57vh;
   background-color: #fff;
   top: 75px;
-  /* left: -100%; */
   left: 0%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
 
   @media (min-width: 1024px) {
     position: relative;
@@ -37,11 +37,19 @@ const MenuList = styled.ul`
   .open {
   }
 `;
-
+// eslint-disable-next-line
 export default ({ isOpen }) => {
-  const url = window.location.pathname
+
+  const closeMenu = () => {
+    const navContainer = document.querySelector("nav.open")
+    const ulContainer = document.querySelector("ul.open")
+
+    navContainer.classList.remove("open")
+    ulContainer.classList.remove("open")
+  }
+
   return (
-    <MenuList className={`${isOpen && "open"}`}>
+    <MenuList onClick={closeMenu} className={`${isOpen && "open"}`}>
       <li><Link className="home" to="/">Home</Link></li>
       <li><Link className="produtos" to="/produtos">Produtos</Link></li>
       <li><Link className="eventos" to="/eventos">Eventos</Link></li>
