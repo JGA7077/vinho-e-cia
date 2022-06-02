@@ -9,7 +9,7 @@ const Home = () => {
   links.forEach((link) => link.classList.remove("active"))
   
   const homeLink = document.querySelector("nav ul li a.home")
-  homeLink.classList.add("active")
+  if(homeLink) homeLink.classList.add("active")
   return(
     <>
       <BannerPrincipal />

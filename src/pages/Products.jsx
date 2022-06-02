@@ -1,14 +1,15 @@
 import React from 'react';
-import BannerPrincipal from '../components/BannerPrincipal/BannerPrincipal';
+import ProductsSlider from '../components/ProductsSlider/ProductsSlider';
 
 const Products = () => {
   const links = document.querySelectorAll("nav ul li a")
   links.forEach((link) => link.classList.remove("active"))
   
-  const homeLink = document.querySelector("nav ul li a.produtos")
-  homeLink.classList.add("active")
+  const productLink = document.querySelector("nav ul li a.produtos")
+  if(productLink) productLink.classList.add("active")
+
   return(
-    <BannerPrincipal />
+    <ProductsSlider />
   )
 }
 export default Products
