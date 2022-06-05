@@ -2,7 +2,7 @@ import React from "react";
 import { Products } from "../../api/products";
 import styled from "styled-components";
 import { whiteBackground, textColor } from "../UI/variaveis";
-import { Button } from "../UI";
+import { Button, TextOverlay } from "../UI";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -84,7 +84,6 @@ const ProductsListContainer = styled.div`
 `;
 
 const ProductsSlider = () => {
-  console.log("Products Slider", Products);
 
   var settings = {
     dots: true,
@@ -119,7 +118,7 @@ const ProductsSlider = () => {
       <Slider {...settings}>
         {Products.map((product, index) => (
           <div className="product-item" key={product.name}>
-            <div className="shadow"></div>
+            <TextOverlay />
             <img src={product.imageURL} alt="" className="product-image" />
             <div className="textBox">
               <h3 className="product-name">{product.name}</h3>

@@ -49,3 +49,46 @@ export const SectionTitle = styled.h2`
     font-size: 65px;
   }
 `
+
+export const SubTitle = styled.h3`
+  color: ${primaryColor};
+  font-size: 25px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 52px;
+  }
+`
+
+export const Icon = styled.svg`
+  width: 30px;
+  height: 40px;
+`
+
+export const TextOverlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000045;
+`
+
+export const Text = styled.p`
+  text-align: center;
+  margin: 5px auto;
+  width: 290px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 475px;
+  }
+
+  @media (min-width: 1280px) {
+    width: auto;
+  }
+`
