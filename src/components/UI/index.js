@@ -15,7 +15,7 @@ export const Button = styled.button`
   }
 `
 
-export const SectionContainer = styled.div`
+export const SectionContainer = styled.section`
   width: 100vw;
   height: 100vh;
   display: flex;
