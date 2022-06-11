@@ -110,6 +110,11 @@ export const LabelInput = styled.label`
 
 export const TextBoxInput = styled.textarea`
   width: 90vw;
+  height: 100px;
+
+  @media (min-width: 1024px) {
+    height: 95px;
+  }
 `
 
 // Mixins
