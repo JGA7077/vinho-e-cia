@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionContainer, SectionTitle, SubTitle, TextOverlay, Text } from "../UI";
+import { SectionContainer, SectionTitle, SubTitle, TextOverlay, Text, FlexColumn } from "../UI";
 import { FaWineGlassAlt } from "react-icons/fa";
 import { primaryColor, secondaryColor } from "../UI/variaveis";
 import scheduleBackground from "../../assets/images/Destaques Maiores/schedule-background.jpg";
@@ -13,10 +13,7 @@ const ScheduleWrapper = styled(SectionContainer)`
 `;
 
 const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  ${FlexColumn('center', 'center')}
   background-image: url(${scheduleBackground});
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,10 +56,7 @@ const ScheduleNumber = styled(SubTitle)`
 
 const TextContainer = styled(SectionContainer)`
   height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  ${FlexColumn('center', 'center')}
 
   @media (min-width: 1280px) {
     height: 520px;

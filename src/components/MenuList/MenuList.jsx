@@ -37,6 +37,7 @@ const MenuList = styled.ul`
   .open {
   }
 `;
+
 // eslint-disable-next-line
 export default ({ isOpen }) => {
 
@@ -44,8 +45,8 @@ export default ({ isOpen }) => {
     const navContainer = document.querySelector("nav.open")
     const ulContainer = document.querySelector("ul.open")
 
-    navContainer.classList.remove("open")
-    ulContainer.classList.remove("open")
+    if (navContainer)  navContainer.classList.remove("open")
+    if (ulContainer) ulContainer.classList.remove("open")
   }
 
   return (

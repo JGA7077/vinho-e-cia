@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { whiteBackground, primaryColor } from '../UI/variaveis';
+import { whiteBackground } from '../UI/variaveis';
 import { SectionTitle } from '../UI';
 
 import { Products } from '../../api/products';
@@ -15,9 +15,7 @@ const ProductSection = styled.div`
   padding: 50px 0;
 `
 
-const ProductSectionTitle = styled(SectionTitle)`
-  color: ${primaryColor};
-`
+const ProductSectionTitle = styled(SectionTitle)``
 
 const ProductsListContainer = styled.div`
   padding: 10px;

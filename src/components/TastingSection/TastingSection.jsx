@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionBox, SectionContainer, SubTitle } from '../UI';
+import { FlexColumn, SectionBox, SectionContainer, SubTitle } from '../UI';
 import BackgroundImage from "../../assets/images/tasting.jpg";
-import { primaryColor } from '../UI/variaveis';
 
 const Container = styled(SectionContainer)`
   background-color: #f8e5bb;
@@ -23,10 +22,7 @@ const ImageBox = styled(SectionBox)`
 
 const TextBox = styled(SectionBox)`
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${FlexColumn('center', 'center')}
   text-align: center;
   gap: 20px 0;
   padding: 20px;
@@ -44,7 +40,6 @@ const TextBox = styled(SectionBox)`
 
 const BoxTitle = styled(SubTitle)`
   font-family: 'Ribeye', cursive;
-  color: ${primaryColor};
   overflow: visible;
 `;
 

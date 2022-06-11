@@ -18,13 +18,6 @@ const Icon = styled(TiThMenu)`
 `;
 
 const Nav = styled.nav`
-  /* max-width: 1170px;
-  padding: 1.5rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; */
-
   .open {
     display: flex;
   }
@@ -42,27 +35,10 @@ const Menu = () => {
     setisActive(!isActive);
   };
 
-  // var deviceWidth = window.innerWidth;
-  // if(deviceWidth >= 1024) setisActive(isActive);
-
   return (
     <>
       <Icon onClick={menuToggle} />
-      {/* <nav style={{ display: isActive ? "flex" : "none" }}> */}
       <Nav className={`${isActive && "open"}`}>
-        {/* <ImMenu onClick={menuToggle}> */}
-        {/* <MenuList style={{ display: isActive ? "flex" : "none" }}> */}
-        {/* <MenuList style={{ display: isActive ? "flex" : "none" }}>
-          {/* <li><Link to="/">Home</Link></li>
-          <li><Link to="/produtos">Produtos</Link></li>
-          <li><Link to="/eventos">Eventos</Link></li>
-          <Link to="/contato"><button>Contato</button></Link> */}
-        {/* <li><a>Home</a></li>
-          <li><a>Produtos</a></li>
-          <li><a>Eventos</a></li>
-          <a><Button>Contato</Button></a>
-        </MenuList>} */}
-        {/* </ImMenu> */}
         <MenuList isOpen={isActive} />
       </Nav>
     </>

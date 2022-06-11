@@ -4,6 +4,9 @@ import { SubTitle } from '../UI';
 
 const TextTitle = styled(SubTitle)`
   font-family: "Ribeye", cursive;
+  @media (min-width: 1024px) {
+    padding-left: 20px;
+  }
 `
 
 const Paragraph = styled.p`

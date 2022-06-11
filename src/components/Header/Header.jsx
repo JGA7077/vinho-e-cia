@@ -12,7 +12,7 @@ const Header = styled.header`
   position: relative;
 `
 
- 
+// eslint-disable-next-line
 export default () => {
   return(
     <Header>

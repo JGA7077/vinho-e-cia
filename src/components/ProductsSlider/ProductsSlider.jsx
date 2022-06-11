@@ -2,7 +2,7 @@ import React from "react";
 import { Products } from "../../api/products";
 import styled from "styled-components";
 import { whiteBackground, textColor } from "../UI/variaveis";
-import { Button, TextOverlay } from "../UI";
+import { Button, FlexColumn, TextOverlay } from "../UI";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -67,10 +67,7 @@ const ProductsListContainer = styled.div`
       position: relative;
       bottom: 30px;
       left: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
+      ${FlexColumn('flex-end', 'flex-start')}
 
       .product-name {
         font-family: 'Ribeye', cursive;

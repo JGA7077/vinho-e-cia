@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BackgroundImage from '../../assets/images/Destaques Maiores/social-background.jpg' 
-import { SubTitle, TextOverlay, Icon } from '../UI';
+import { SubTitle, TextOverlay, Icon, FlexColumn } from '../UI';
 import { primaryColor } from '../UI/variaveis';
 import {IoIosMailOpen} from 'react-icons/io'
 import {FaPhoneSquare, FaFacebookSquare, FaTwitterSquare, FaPinterestSquare, FaGooglePlusSquare} from 'react-icons/fa'
@@ -12,10 +12,7 @@ const ImageContainer = styled.div`
   background-position-x: 70px;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${FlexColumn('center', 'center')}
 
   @media (min-width: 768px) {
     background-position-x: 0px;
@@ -27,18 +24,12 @@ const TextOverlayContact = styled(TextOverlay)`
 `
 
 const SocialLinksWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${FlexColumn('center', 'center')}
   z-index: 5;
 `
 
 const ContactsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${FlexColumn('center', 'center')}
 `
 
 const SocialNetworkContainer = styled.div`
@@ -53,13 +44,11 @@ const SocialIconsContainer = styled.div`
 
 const ContactTitle = styled(SubTitle)`
   font-family: 'Ribeye', cursive;
-  color: ${primaryColor};
   overflow: visible;
 `
 
 const SocialTitle = styled(SubTitle)`
   font-family: 'Ribeye', cursive;
-  color: ${primaryColor};
   overflow: visible;
 `
 

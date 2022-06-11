@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primaryColor, secondaryColor } from "./variaveis";
+import { primaryColor, secondaryColor, textColor } from "./variaveis";
 
 export const Button = styled.button`
   width: 145px;
@@ -67,11 +67,6 @@ export const SubTitle = styled.h3`
   }
 `
 
-export const Icon = () => `
-  color: ${primaryColor};
-  font-size: 2.3rem;
-`
-
 export const TextOverlay = styled.div`
   width: 100%;
   height: 100%;
@@ -91,4 +86,41 @@ export const Text = styled.p`
   @media (min-width: 1280px) {
     width: auto;
   }
+`
+
+export const TextInput = styled.input`
+  width: 90vw;
+
+  @media (min-width: 1024px) {
+    width: 570px;
+  }
+`
+
+export const LabelInput = styled.label`
+  font-weight: bold;
+  color: ${textColor};
+  margin: 15px 0 5px 0;
+
+  &::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+  }
+`
+
+export const TextBoxInput = styled.textarea`
+  width: 90vw;
+`
+
+// Mixins
+export const Icon = () => `
+  color: ${primaryColor};
+  font-size: 2.3rem;
+`
+
+export const FlexColumn = (justify, align) => `
+display: flex;
+flex-direction: column;
+justify-content: ${justify};
+align-items: ${align};
 `

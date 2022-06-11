@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionContainer, SectionBox, SectionTitle } from "../UI";
-import { primaryColor, secondaryColor } from "../UI/variaveis";
+import { SectionContainer, SectionBox, SectionTitle, FlexColumn } from "../UI";
+import { secondaryColor } from "../UI/variaveis";
 import BackgroundImage from "../../assets/images/prateleira-vinhos.jpg";
 
 const Container = styled(SectionContainer)`
@@ -27,10 +27,7 @@ const ImageBox = styled(SectionBox)`
 const TextBox = styled(SectionBox)`
   background-color: #fff;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${FlexColumn('center', 'center')}
   text-align: center;
   gap: 20px 0;
   padding: 20px 20px;
@@ -50,7 +47,6 @@ const TextBox = styled(SectionBox)`
 
 const BoxTitle = styled(SectionTitle)`
   font-family: "Great Vibes", cursive;
-  color: ${primaryColor};
   font-size: 2rem;
 `;
 
