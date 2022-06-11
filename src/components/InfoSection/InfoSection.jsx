@@ -52,10 +52,6 @@ const BoxTitle = styled(SectionTitle)`
   font-family: "Great Vibes", cursive;
   color: ${primaryColor};
   font-size: 2rem;
-
-  /* @media (min-width: 1280px) {
-    font-size: 80px;
-  } */
 `;
 
 const InfoSection = () => {

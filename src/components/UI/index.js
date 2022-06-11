@@ -23,7 +23,7 @@ export const SectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
   }
 `
