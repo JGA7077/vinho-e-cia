@@ -67,9 +67,9 @@ export const SubTitle = styled.h3`
   }
 `
 
-export const Icon = styled.svg`
-  width: 30px;
-  height: 40px;
+export const Icon = () => `
+  color: ${primaryColor};
+  font-size: 2.3rem;
 `
 
 export const TextOverlay = styled.div`

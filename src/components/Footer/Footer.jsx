@@ -1,5 +1,4 @@
 import React from 'react';
-import {ImFacebook2, ImMail} from 'react-icons/im'
 import styled from 'styled-components';
 
 const Footer = styled.footer`
@@ -17,6 +16,7 @@ const Footer = styled.footer`
   }
 `
 
+// eslint-disable-next-line
 export default () => {
   return(
     <Footer>
